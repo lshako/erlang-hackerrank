@@ -20,4 +20,4 @@ replicate_tail(N, Acc) -> replicate_tail(N-1, [N-1|Acc]).
 main() ->
   {ok, [N]} = io:fread("", "~d"),
   Arr=replicate_tail(N),
-  io:format("~p", [Arr]).
+  io:format("~b~n", [Arr]).
